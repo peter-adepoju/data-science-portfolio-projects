@@ -10,5 +10,4 @@ The goal of this repository is to keep my completed work in one place and build 
 
 ## Contact
 
-Peter Adepoju\
-petera@aims.ac.za
+Peter Adepoju | petera@aims.ac.za
