@@ -366,6 +366,7 @@ show_debug = st.sidebar.checkbox("Show debug information", value=False)
 figure_dirs = [REPORTS_FIGURES_DIR, DOCS_FIGURES_DIR]
 image_paths = []
 seen_figure_names = set()
+
 for figure_dir in figure_dirs:
     if figure_dir.exists():
         for path in sorted(figure_dir.glob("*.png")):
@@ -824,10 +825,15 @@ with story_tabs[7]:
         st.image(Image.open(fig_path), caption=selected_fig, use_container_width=True)
         st.caption(f"Loaded from `{fig_path.relative_to(ROOT)}`")
 
-        preview_cols = st.columns(min(3, len(image_paths)))
-        for idx, preview_path in enumerate(image_paths[: len(preview_cols)]):
+        preview_count = min(3, len(image_paths))
+        preview_cols = st.columns(preview_count)
+        for idx, preview_path in enumerate(image_paths[:preview_count]):
             with preview_cols[idx]:
-                st.image(Image.open(preview_path), caption=preview_path.name, use_container_width=True)
+                st.image(
+                    Image.open(preview_path),
+                    caption=preview_path.name,
+                    use_container_width=True,
+                )
         st.markdown(
             f"""
             **Selected figure:** `{selected_fig}`  
@@ -878,7 +884,7 @@ with story_tabs[9]:
         coarse approximations. Some climate inputs are optional or fallback-based. And the model
         is predictive rather than causal.
 
-        These limitations do not weaken the project?s value. They define the boundary of what the
+        These limitations do not weaken the project's value. They define the boundary of what the
         analysis can honestly claim. A good scientific project is not one that hides its limits,
         but one that states them clearly.
         """
@@ -1673,6 +1679,3 @@ st.caption(
     "Run the notebooks in order to regenerate datasets, metrics, predictions, and reports."
 
 )
-
-
-
