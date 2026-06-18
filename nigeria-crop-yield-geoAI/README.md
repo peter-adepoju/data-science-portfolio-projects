@@ -165,12 +165,6 @@ pip install -e .
 make quickstart
 ```
 
-To run the dashboard directly:
-
-```bash
-streamlit run streamlit_app.py
-```
-
 If you prefer conda:
 
 ```bash
