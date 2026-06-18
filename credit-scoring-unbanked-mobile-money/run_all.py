@@ -21,8 +21,7 @@ def main() -> None:
     notebooks_dir = root / "notebooks"
     for notebook in NOTEBOOKS:
         path = notebooks_dir / notebook
-        print(f"
-Executing {path}...", flush=True)
+        print(f"\nExecuting {path}...", flush=True)
         subprocess.run(
             [
                 sys.executable,
@@ -38,8 +37,7 @@ Executing {path}...", flush=True)
             check=True,
             cwd=root,
         )
-    print("
-All notebooks were executed successfully.")
+    print("\nAll notebooks were executed successfully.")
 
 
 if __name__ == "__main__":
