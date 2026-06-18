@@ -1,0 +1,8 @@
+column,n_missing,pct_missing,dtype
+year,0,0.0,int64
+banked_pct,0,0.0,float64
+mobile_money_pct,0,0.0,float64
+excluded_pct,0,0.0,float64
+adult_pop_m,0,0.0,float64
+banked_m,0,0.0,float64
+excluded_m,0,0.0,float64

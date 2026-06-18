@@ -1,0 +1,4 @@
+year,revenue_usd_m,cogs_usd_m,gross_profit_usd_m,personnel_usd_m,tech_infra_usd_m,marketing_usd_m,regulatory_usd_m,other_opex_usd_m,total_opex_usd_m,ebitda_usd_m,ebitda_margin_pct
+1,6.0,2.4,3.6,1.5,0.6,0.72,0.3,0.18,3.3,0.3,5.0
+2,11.178,4.471,6.707,2.794,1.118,1.341,0.559,0.335,6.148,0.559,5.0
+3,18.254,7.302,10.952,4.564,1.825,2.19,0.913,0.548,10.04,0.913,5.0

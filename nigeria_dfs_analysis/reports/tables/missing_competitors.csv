@@ -1,0 +1,12 @@
+column,n_missing,pct_missing,dtype
+agent_network_k,6,60.0,float64
+funding_usd_m,1,10.0,float64
+company,0,0.0,object
+founded,0,0.0,int64
+type,0,0.0,object
+reported_users_m,0,0.0,float64
+revenue_model,0,0.0,object
+headquarters,0,0.0,object
+cbsn_licensed,0,0.0,bool
+primary_market,0,0.0,object
+monthly_txn_ngn_bn,0,0.0,float64

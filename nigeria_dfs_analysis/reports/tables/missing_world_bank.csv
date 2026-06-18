@@ -1,0 +1,6 @@
+column,n_missing,pct_missing,dtype
+value,248,23.85,float64
+country,0,0.0,object
+year,0,0.0,int64
+indicator,0,0.0,object
+wb_code,0,0.0,object

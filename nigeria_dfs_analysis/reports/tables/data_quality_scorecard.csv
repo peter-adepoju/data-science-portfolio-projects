@@ -1,0 +1,5 @@
+Dataset,Schema OK,Duplicates,Missing (key),Outlier flags,Overall
+World Bank WDI,✓,0,Findex gaps,0,PASS
+CBN Payments,✓,0,None,0,PASS
+EFInA Surveys,✓,0,None,0,PASS
+Competitors,✓,0,Funding for 3,0,PASS (note caveats)

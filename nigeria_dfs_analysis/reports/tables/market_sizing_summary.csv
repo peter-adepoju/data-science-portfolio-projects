@@ -1,0 +1,5 @@
+Market,Population (M),% of Adults,Avg Txn/User (USD/yr),Market Size (USD M),Notes
+TAM,106.0,100.0,850.0,"$90,100M",Total Nigerian adults (15+). ASSUMPTION: every adult participates in at least one digital financial transaction annually at $850/yr.
+SAM,42.4,40.0,850.0,"$36,040M",Adults with smartphone/mobile internet access (40%). Source: GSMA State of Mobile Internet Connectivity 2023. ASSUMPTION: all smartphone users are reachable via mobile banking.
+SOM_Y1,0.85,0.8,850.0,$721M,"Year 1 obtainable: 2% of SAM. ASSUMPTION based on comparable fintech launches (Kuda, Carbon Y1 user counts). Conservative estimate."
+SOM_Y3,2.97,2.8,850.0,"$2,523M",Year 3 obtainable: 7% of SAM. ASSUMPTION: strong growth with agent network + product-market fit.

@@ -1,0 +1,13 @@
+Category,Risk,Description,Probability,Impact,Risk Score,Risk Tier,Mitigation
+Macroeconomic,NGN Devaluation / FX Volatility,Continued naira devaluation erodes USD-equivalent revenue and investment return,5,4,20,Critical,Revenue in NGN; funding in USD with natural hedge strategy; FX risk disclosed to investors
+Regulatory,CBN Licensing Denial,CBN may deny or delay Payment Service Bank / Fintech licence,3,5,15,Critical,Early pre-application engagement with CBN Innovation Lab; appoint CBN-experienced compliance officer
+Macroeconomic,Inflation & Purchasing Power Erosion,High inflation reduces consumer discretionary spend on financial products,4,3,12,High,"Target essential payment services (utility bills, transport, remittances) which are less elastic"
+Competitive,Incumbent Telco Dominance,MTN MoMo or Airtel Money achieve network effect lock-in before entrant scales,3,4,12,High,Partner with Tier-2 telcos; focus on underserved segments not yet captured by telco wallets
+Operational,Agent Network Quality Control,Agent fraud or poor user experience damages brand in target communities,3,4,12,High,Tiered agent KYC; real-time monitoring dashboard; performance bonuses for compliant agents
+Credit,Non-Performing Loan Spike,Lending book NPL ratio exceeds 10% due to lack of credit bureau coverage,3,4,12,High,Conservative LTV ratios in Y1; leverage CBN Credit Risk Management System (CRMS); alternative data scoring
+Technology,Cybersecurity / Fraud Incident,Major data breach or fraud incident undermines user trust and triggers CBN sanctions,2,5,10,High,ISO 27001 certification; dedicated fraud team; mandatory MFA; bug bounty programme
+Regulatory,Stricter Data Localisation,NDPR or new CBN regulation mandating stricter Nigerian data residency,3,3,9,Medium,"Build infrastructure on Nigerian cloud nodes (AWS Lagos, Azure West Africa) from day one"
+Competitive,Moniepoint / OPay Price War,Established players cut transaction fees to zero to defend market share,3,3,9,Medium,"Differentiate on product depth (lending, insurance, savings) rather than transaction fee price"
+Technology,API / NIBSS Downtime,Dependency on NIBSS or CBN payment infrastructure causes service outages,3,3,9,Medium,Multi-bank settlement redundancy; SLA agreements; in-app service status page
+Operational,Customer Acquisition Cost Escalation,Competitive market drives CAC above unit economics threshold,3,3,9,Medium,Referral programme; SME B2B2C channel; USSD fallback for feature-phone users
+Geopolitical,Insecurity in Target Regions,Security incidents in North-East / North-West reduce addressable agent footprint,3,2,6,Medium,"Initial focus on South-West, South-East, and FCT; phased North expansion with security assessment"
