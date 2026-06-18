@@ -210,12 +210,6 @@ To run the full workflow:
 python run_all.py
 ```
 
-To open the dashboard:
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
 ---
 
 ## 8. Project Structure
