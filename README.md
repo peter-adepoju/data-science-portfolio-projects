@@ -1,8 +1,6 @@
 # Data Science Portfolio Projects
 
-This repository is a personal archive for the data science projects I have completed and will continue to work on.
-
-Each project will include codes, reports, notebooks, visualizations, and related documentation.
+This repository is a personal archive for the data science projects I have completed and will continue to work on. Each project will include codes, reports, notebooks, visualizations, and related documentation.
 
 ## Purpose
 
