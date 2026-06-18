@@ -1,0 +1,18 @@
+feature_name,feature_family,description,expected_source,privacy_risk,used_in_public_proxy_workflow
+mm_topup_count_30d,airtime_topup,Number of airtime top-ups in the last 30 days,Mobile network operator / airtime lender,medium,no
+mm_topup_amount_sum_30d,airtime_topup,Total airtime top-up value in the last 30 days,Mobile network operator / airtime lender,medium,no
+mm_topup_amount_cv_90d,airtime_topup,Coefficient of variation of top-up values over 90 days,Mobile network operator / airtime lender,medium,no
+mm_days_since_last_topup,airtime_topup,Recency of last airtime top-up,Mobile network operator / airtime lender,medium,no
+mm_cash_in_count_30d,mobile_money,Number of mobile-money cash-in events in the last 30 days,Mobile-money provider,high,no
+mm_cash_out_count_30d,mobile_money,Number of mobile-money cash-out events in the last 30 days,Mobile-money provider,high,no
+mm_p2p_received_sum_90d,mobile_money,Total peer-to-peer inflow over 90 days,Mobile-money provider,high,no
+mm_p2p_sent_sum_90d,mobile_money,Total peer-to-peer outflow over 90 days,Mobile-money provider,high,no
+mm_billpay_count_90d,bill_payment,Number of utility or merchant payments over 90 days,Mobile-money provider / biller,high,no
+mm_ussd_sessions_30d,ussd_behavior,Number of USSD sessions in the last 30 days,Mobile-money provider / telco,medium,no
+proxy_payment_ratio_mean_6m,repayment_proxy,Mean payment-to-bill ratio across six observed months,UCI repayment records,lower,yes
+proxy_payment_ratio_volatility_6m,repayment_proxy,Volatility of payment-to-bill ratio across six observed months,UCI repayment records,lower,yes
+proxy_delinquency_count_6m,repayment_proxy,Number of months with delayed repayment status,UCI repayment records,lower,yes
+proxy_max_delinquency_6m,repayment_proxy,Maximum repayment-delay state across observed months,UCI repayment records,lower,yes
+proxy_recent_repayment_status,repayment_proxy,Most recent repayment status,UCI repayment records,lower,yes
+proxy_utilization_mean_6m,affordability_proxy,Mean bill amount relative to credit limit,UCI billing records,lower,yes
+proxy_payment_consistency_6m,behavioral_proxy,Fraction of months with positive payment made,UCI payment records,lower,yes
