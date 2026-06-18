@@ -1,0 +1,6 @@
+stage,decision,reason
+data,Downloading the UCI public credit-default dataset during Notebook 01,It provided a legally accessible supervised default target.
+features,Creating repayment and transaction-style proxy features,These features approximated the behavioral summaries used in alternative-data lending.
+models,"Comparing logistic regression, random forest, XGBoost, and a neural network",The comparison separated interpretable baselines from high-capacity learners.
+evaluation,"Using ROC-AUC, PR-AUC, Brier score, log loss, calibration, lift, and threshold-cost curves","Credit scoring required discrimination, calibration, and business-cost assessment."
+governance,Adding basic group-error diagnostics and adverse-action reason helpers,Alternative-data credit scoring could create privacy and fairness risks.

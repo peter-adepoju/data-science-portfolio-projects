@@ -1,0 +1,7 @@
+artifact,path,exists
+processed_base_dataset,data\processed\credit_default_base.csv,True
+engineered_feature_dataset,data\processed\credit_default_features.csv,True
+final_model_comparison,reports\tables\06_final_model_comparison.csv,True
+best_model_metadata,reports\tables\06_best_model_metadata.csv,True
+inference_sample,data\processed\inference_sample.csv,True
+streamlit_model_artifact,models\best_credit_scoring_pipeline.joblib,True

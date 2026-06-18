@@ -1,0 +1,10 @@
+sex,count,default_rate,group_variable,education,marriage
+female,18112,0.20776280918727916,sex,,
+male,11888,0.2416722745625841,sex,,
+,10585,0.19234766178554558,education,graduate_school,
+,4917,0.2515761643278422,education,high_school,
+,468,0.07051282051282051,education,other,
+,14030,0.23734853884533144,education,university,
+,13659,0.23471703638626545,marriage,,married
+,377,0.23607427055702918,marriage,,other
+,15964,0.20928338762214985,marriage,,single

@@ -1,0 +1,6 @@
+source,role,included,risk
+UCI Default of Credit Card Clients,primary runnable supervised dataset,downloaded by notebook,not mobile-money data
+Mobile-money / USSD / airtime provider records,target real-world data type,not included,sensitive private data; normally not open
+Mobile-money feature dictionary,schema template,included as metadata,not real customer records
+Home Credit Default Risk,optional extension,not bundled,requires user download under Kaggle terms
+World Bank Global Findex,financial-inclusion context,referenced,"country-level/individual survey context, not default labels"

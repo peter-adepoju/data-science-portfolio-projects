@@ -1,0 +1,51 @@
+predicted_default_probability,risk_band,illustrative_reasons
+0.679993,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances
+0.8810395,high,recent payments were low relative to outstanding balances; payments were not consistently observed across recent months
+0.4110594,medium,
+0.8270624,high,recent payments were low relative to outstanding balances; average balance utilization was high
+0.29999664,medium,
+0.737479,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances; average balance utilization was high
+0.25162923,medium,
+0.15309873,low,
+0.2989656,medium,recent payments were low relative to outstanding balances
+0.21165104,low,recent payments were low relative to outstanding balances
+0.22582896,low,recent payments were low relative to outstanding balances; average balance utilization was high
+0.5925477,high,
+0.9030143,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances; average balance utilization was high
+0.121112466,low,recent payments were low relative to outstanding balances
+0.73112833,high,recent repayment delays were frequent
+0.19460626,low,
+0.104171425,low,recent payments were low relative to outstanding balances
+0.9098453,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances
+0.7159623,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances
+0.1573247,low,
+0.34521866,medium,
+0.5377829,high,recent payments were low relative to outstanding balances; average balance utilization was high
+0.31593585,medium,recent payments were low relative to outstanding balances; average balance utilization was high
+0.10655404,low,recent payments were low relative to outstanding balances
+0.9140442,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances; average balance utilization was high
+0.91140926,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances
+0.49970454,medium,recent payments were low relative to outstanding balances; payments were not consistently observed across recent months
+0.1945382,low,recent payments were low relative to outstanding balances
+0.30878156,medium,recent payments were low relative to outstanding balances; average balance utilization was high
+0.56934494,high,recent repayment delays were frequent
+0.35247144,medium,recent payments were low relative to outstanding balances; average balance utilization was high
+0.8191037,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances; average balance utilization was high
+0.29727927,medium,recent payments were low relative to outstanding balances
+0.21279122,low,
+0.35966057,medium,recent payments were low relative to outstanding balances; average balance utilization was high
+0.65947914,high,recent payments were low relative to outstanding balances; payments were not consistently observed across recent months
+0.39640903,medium,recent payments were low relative to outstanding balances; average balance utilization was high
+0.42729005,medium,
+0.10024651,low,recent payments were low relative to outstanding balances
+0.33473346,medium,recent payments were low relative to outstanding balances
+0.81889373,high,recent repayment delays were frequent; recent payments were low relative to outstanding balances; average balance utilization was high
+0.7689401,high,recent repayment delays were frequent
+0.24027872,low,
+0.29008067,medium,
+0.2296452,low,recent payments were low relative to outstanding balances
+0.2640198,medium,payments were not consistently observed across recent months
+0.22903244,low,
+0.21821755,low,recent payments were low relative to outstanding balances
+0.119960964,low,
+0.3053968,medium,

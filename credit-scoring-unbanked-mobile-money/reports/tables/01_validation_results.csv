@@ -1,0 +1,4 @@
+check,passed,errors,warnings
+required_columns,True,,
+binary_target,True,,
+duplicate_rows,True,,Found 35 duplicated rows.

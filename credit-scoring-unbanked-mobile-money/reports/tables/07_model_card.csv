@@ -1,0 +1,7 @@
+section,content
+intended_use,Research and portfolio demonstration of default-risk scoring using public repayment data and alternative-data-inspired features.
+not_intended_use,"Production lending, automated rejection, or real borrower scoring without consent, governance, regulatory review, and true out-of-time validation."
+data_limitation,The runnable dataset was not genuine mobile-money data; it was an open credit-default proxy dataset.
+privacy,"True USSD, airtime, and mobile-money records would require strict minimization, consent, encryption, access control, and retention limits."
+fairness,Group diagnostics were performed only for available proxy groups and did not constitute a complete fairness audit.
+monitoring,"A deployed model would need drift monitoring, calibration monitoring, adverse-action logging, and periodic revalidation."
