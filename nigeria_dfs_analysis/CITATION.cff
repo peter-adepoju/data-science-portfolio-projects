@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this project in your work, please cite it using this metadata."
+type: software
+title: "Nigeria Digital Financial Services Market Analysis"
+abstract: >
+  A consulting-grade, end-to-end portfolio project covering the strategic market
+  assessment of Nigeria's digital financial services sector (2015–2023). Includes
+  financial inclusion analysis, market sizing (TAM/SAM/SOM), competitive landscape
+  assessment, 3-year financial modelling with sensitivity analysis and comparable
+  company valuation, risk assessment framework, statistical inference, and an
+  interactive Streamlit dashboard. Uses real public data from CBN Annual Reports,
+  EFInA Access to Finance Surveys, and the World Bank Development Indicators API.
+authors:
+  - family-names: "Your Family Name"
+    given-names: "Your Given Name"
+    email: "your@email.com"
+version: "1.0.0"
+date-released: "2024-01-01"
+license: MIT
+repository-code: "https://github.com/YOUR_USERNAME/nigeria_dfs_analysis"
+keywords:
+  - nigeria
+  - fintech
+  - financial-inclusion
+  - market-analysis
+  - management-consulting
+  - financial-modelling
+  - digital-financial-services
+  - data-science
+  - python
+  - streamlit
+references:
+  - type: report
+    title: "Access to Finance Survey 2023"
+    authors:
+      - name: "EFInA"
+    year: 2023
+    url: "https://efina.org.ng"
+  - type: report
+    title: "CBN Annual Report 2023"
+    authors:
+      - name: "Central Bank of Nigeria"
+    year: 2023
+    url: "https://www.cbn.gov.ng/documents/annualreports/"
+  - type: dataset
+    title: "World Development Indicators"
+    authors:
+      - name: "World Bank"
+    year: 2023
+    url: "https://databank.worldbank.org/source/world-development-indicators"

@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "nigeria-dfs-analysis"
+version = "1.0.0"
+description = "Nigeria Digital Financial Services Market Analysis — consulting-grade portfolio project"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+    { name = "Your Name", email = "your@email.com" }
+]
+keywords = ["fintech", "nigeria", "financial-inclusion", "market-analysis", "consulting"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "plotly>=5.22",
+    "wbdata>=1.0",
+    "openpyxl>=3.1",
+    "xlsxwriter>=3.2",
+    "pyyaml>=6.0",
+    "streamlit>=1.35",
+    "tqdm>=4.66",
+    "tabulate>=0.9",
+    "jinja2>=3.1",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "black", "flake8", "isort", "nbconvert"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
