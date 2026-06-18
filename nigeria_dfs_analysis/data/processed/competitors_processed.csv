@@ -1,0 +1,11 @@
+company,founded,type,reported_users_m,funding_usd_m,revenue_model,headquarters,cbsn_licensed,agent_network_k,primary_market,monthly_txn_ngn_bn
+OPay,2018,SuperApp,35.0,570.0,Trans+Ads,Lagos,True,300.0,Consumer,800.0
+Moniepoint,2015,B2B/B2C,2.0,400.0,Trans+Lend,Lagos,True,800.0,Agents/SME,2100.0
+PalmPay,2019,B2C,30.0,300.0,Trans,Lagos,True,500.0,Consumer,600.0
+Kuda,2019,Neobank,6.0,90.0,Lend+Trans,London/Lagos,True,,Consumer,120.0
+Carbon,2012,Neobank,2.5,30.0,Lend,Lagos,True,,Consumer,50.0
+FairMoney,2017,Neobank,2.0,51.0,Lend,Paris/Lagos,True,,Consumer,40.0
+ALAT(Wema),2017,Neobank,0.8,0.0,Lend+Trans,Lagos,True,,Consumer,35.0
+GTCo Squad,2021,Payments,3.0,0.0,Trans,Lagos,True,,Consumer,200.0
+Access_Closa,2022,Payments,1.5,0.0,Trans,Lagos,True,,Consumer,80.0
+MTN_MoMo,2021,MobileMoney,10.0,,Trans+Float,Lagos,True,150.0,Consumer,90.0

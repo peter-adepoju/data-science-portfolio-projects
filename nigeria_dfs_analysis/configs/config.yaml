@@ -1,0 +1,129 @@
+# configs/config.yaml
+# Central configuration for the Nigeria DFS Market Analysis project.
+# All paths are relative to the project root.
+# Load this file from any notebook or script using src/config.py.
+
+project:
+  name: "Nigeria Digital Financial Services Market Analysis"
+  version: "1.0.0"
+  description: >
+    End-to-end consulting-grade market analysis of Nigeria's digital financial
+    services sector (2015–2023). Covers financial inclusion trends, market sizing,
+    competitive landscape, financial modelling, risk assessment, and strategic
+    recommendations. Designed as a portfolio/CV project for a management consulting
+    analyst role.
+  author: "Your Name"
+  date: "2024"
+
+random_seed: 42
+
+# ── Data paths ──────────────────────────────────────────────────────────────
+paths:
+  data_raw:        "data/raw"
+  data_interim:    "data/interim"
+  data_processed:  "data/processed"
+  data_external:   "data/external"
+  data_mock:       "data/mock"
+  reports_figures: "reports/figures"
+  reports_tables:  "reports/tables"
+  paper_figures:   "paper_or_report/figures"
+  paper_tables:    "paper_or_report/tables"
+  models:          "models"
+  notebooks:       "notebooks"
+
+# ── World Bank API configuration ────────────────────────────────────────────
+world_bank:
+  country: "NG"               # ISO-2 code for Nigeria
+  comparators:                # Peer countries for benchmarking
+    - "NG"   # Nigeria
+    - "KE"   # Kenya
+    - "GH"   # Ghana
+    - "ZA"   # South Africa
+    - "EG"   # Egypt
+    - "ET"   # Ethiopia
+    - "SSF"  # Sub-Saharan Africa (aggregate)
+    - "WLD"  # World average
+  date_range: [2011, 2023]    # Year range for WDI pull
+
+  # World Bank Development Indicator codes used in this project
+  indicators:
+    account_ownership:      "FX.OWN.TOTL.ZS"      # % adults with account
+    account_female:         "FX.OWN.TOTL.FE.ZS"   # Female account ownership
+    account_male:           "FX.OWN.TOTL.MA.ZS"   # Male account ownership
+    account_rural:          "FX.OWN.TOTL.RUR.ZS"  # Rural account ownership
+    mobile_money:           "FX.OWN.TOTL.OT.ZS"   # Mobile money account (%)
+    population_total:       "SP.POP.TOTL"          # Total population
+    population_15plus:      "SP.POP.15UP.TO.ZS"   # Pop 15+ share
+    mobile_subscriptions:   "IT.CEL.SETS.P2"       # Mobile per 100 people
+    internet_users:         "IT.NET.USER.ZS"       # Internet users (%)
+    gdp_usd:                "NY.GDP.MKTP.CD"       # GDP current USD
+    gdp_per_capita:         "NY.GDP.PCAP.CD"       # GDP per capita USD
+    inflation:              "FP.CPI.TOTL.ZG"       # CPI inflation (%)
+    urban_population_pct:   "SP.URB.TOTL.IN.ZS"   # Urban population (%)
+
+# ── Market sizing assumptions (labelled as assumptions) ─────────────────────
+# ASSUMPTION: These parameters are estimated from CBN, EFInA, and World Bank
+# reports. They should be updated when more recent data becomes available.
+market_sizing:
+  nigeria_adults_2023_m:     106.0       # Million adults (15+) — World Bank 2023
+  banked_rate_2023:            0.45      # 45% — EFInA 2023 estimate
+  mobile_money_rate_2023:      0.35      # 35% — EFInA/CBN 2023 estimate
+  smartphone_penetration:      0.40      # 40% — GSMA 2023 estimate
+  financially_excluded_m:     35.0      # ~35 million adults fully excluded
+  avg_annual_txn_value_usd:   850.0     # ASSUMPTION: avg digital txn per year per user
+  sam_capture_rate:            0.18      # 18% of serviceable market reachable by entrant
+  som_capture_rate_y1:         0.02      # 2% of SAM in Year 1
+  som_capture_rate_y3:         0.07      # 7% of SAM by Year 3
+  fx_usd_ngn_2023:           1500.0     # USD/NGN exchange rate (approx end-2023)
+
+# ── Financial model assumptions ─────────────────────────────────────────────
+# ASSUMPTION: Based on comparable fintech benchmarks (Moniepoint, Opay public filings)
+financial_model:
+  user_base_y1:            500_000    # Year 1 user target
+  user_growth_rate_y2:        0.80    # 80% YoY user growth (aggressive market)
+  user_growth_rate_y3:        0.60    # 60% YoY user growth
+  churn_rate:                 0.18    # 18% annual churn — ASSUMPTION
+  arpu_usd_y1:               12.00   # Annual revenue per user in USD — ASSUMPTION
+  arpu_growth_rate:           0.15   # 15% ARPU improvement per year
+  # Revenue stream mix
+  revenue_mix:
+    transaction_fees_pct:     0.55   # 55% from transaction fees
+    float_income_pct:         0.20   # 20% from float/treasury
+    lending_pct:              0.15   # 15% from lending spread
+    subscription_pct:         0.10   # 10% from premium subscriptions
+  # Cost structure (% of revenue) — ASSUMPTION from comparable fintechs
+  opex:
+    cost_of_revenue_pct:      0.40
+    personnel_pct:            0.25
+    tech_infrastructure_pct:  0.10
+    marketing_pct:            0.12
+    regulatory_compliance_pct: 0.05
+    other_pct:                0.03
+
+# ── Risk matrix configuration ───────────────────────────────────────────────
+risk_assessment:
+  probability_scale: [1, 2, 3, 4, 5]   # 1=Rare, 5=Almost certain
+  impact_scale:      [1, 2, 3, 4, 5]   # 1=Negligible, 5=Catastrophic
+  risk_thresholds:
+    low:    [1, 4]      # score ≤ 4
+    medium: [5, 9]      # score 5–9
+    high:   [10, 14]    # score 10–14
+    critical: [15, 25]  # score ≥ 15
+
+# ── Visualisation ────────────────────────────────────────────────────────────
+viz:
+  dpi: 300
+  figure_format: "png"
+  colorblind_palette: "colorblind"   # seaborn palette
+  brand_colors:
+    primary:    "#003087"    # Deep navy (consulting blue)
+    secondary:  "#00A86B"    # Nigeria green
+    accent:     "#E8A020"    # Gold/amber accent
+    danger:     "#C0392B"    # Risk red
+    neutral:    "#7F8C8D"    # Grey
+    background: "#F8F9FA"    # Light background
+  figure_size:
+    wide:   [14, 6]
+    square: [8, 8]
+    tall:   [8, 12]
+    small:  [6, 4]
