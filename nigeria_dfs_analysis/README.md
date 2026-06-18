@@ -205,7 +205,6 @@ python -m venv .venv
 pip install -r requirements.txt
 python scripts/download_data.py
 make notebooks
-streamlit run dashboard/app.py
 ```
 
 If you prefer conda:
