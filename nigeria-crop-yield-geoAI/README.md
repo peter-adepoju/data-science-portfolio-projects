@@ -17,8 +17,6 @@ Key results:
 - Extra Trees is a close second, with RMSE 1,442.53, MAE 831.85, and R2 0.529.
 - Gradient Boosting reaches RMSE 1,538.65, MAE 901.20, and R2 0.465.
 
-The project is presented as both a reproducible repository and an interactive report, with figures, a GitHub Pages site, and a Streamlit dashboard.
-
 ---
 
 ## 1. Introduction
