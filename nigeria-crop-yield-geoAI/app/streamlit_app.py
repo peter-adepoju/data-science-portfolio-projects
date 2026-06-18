@@ -31,6 +31,8 @@ REPORTS_TABLES_DIR = ROOT / "reports" / "tables"
 
 REPORTS_FIGURES_DIR = ROOT / "reports" / "figures"
 
+DOCS_FIGURES_DIR = ROOT / "docs" / "assets" / "figures"
+
 MODELS_DIR = ROOT / "models"
 
 
@@ -361,7 +363,15 @@ st.sidebar.markdown("---")
 
 show_debug = st.sidebar.checkbox("Show debug information", value=False)
 
-image_paths = sorted(REPORTS_FIGURES_DIR.glob("*.png"))
+figure_dirs = [REPORTS_FIGURES_DIR, DOCS_FIGURES_DIR]
+image_paths = []
+seen_figure_names = set()
+for figure_dir in figure_dirs:
+    if figure_dir.exists():
+        for path in sorted(figure_dir.glob("*.png")):
+            if path.name not in seen_figure_names:
+                image_paths.append(path)
+                seen_figure_names.add(path.name)
 
 
 
@@ -802,7 +812,7 @@ with story_tabs[7]:
     st.markdown("### Figures")
     st.markdown(
         """
-        The figures below are the project?s visual evidence. They are not decoration. They are
+        The figures below are the project's visual evidence. They are not decoration. They are
         the graphical form of the story told in the textbook.
         """
     )
@@ -812,6 +822,12 @@ with story_tabs[7]:
         selected_fig = st.selectbox("Choose a figure to inspect", figure_names)
         fig_path = figure_map[selected_fig]
         st.image(Image.open(fig_path), caption=selected_fig, use_container_width=True)
+        st.caption(f"Loaded from `{fig_path.relative_to(ROOT)}`")
+
+        preview_cols = st.columns(min(3, len(image_paths)))
+        for idx, preview_path in enumerate(image_paths[: len(preview_cols)]):
+            with preview_cols[idx]:
+                st.image(Image.open(preview_path), caption=preview_path.name, use_container_width=True)
         st.markdown(
             f"""
             **Selected figure:** `{selected_fig}`  
@@ -821,7 +837,9 @@ with story_tabs[7]:
             """
         )
     else:
-        st.info("No figures were found in `reports/figures/`.")
+        st.info(
+            "No figures were found in `reports/figures/` or `docs/assets/figures/`."
+        )
 
 with story_tabs[8]:
     st.markdown("### Explorer")
@@ -1655,7 +1673,6 @@ st.caption(
     "Run the notebooks in order to regenerate datasets, metrics, predictions, and reports."
 
 )
-
 
 
 
